@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+section {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.drag-container, .hover-container {
+    margin: 20px 0;
+}
+
+.draggable, .dropzone {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+
+.draggable {
+    background-color: #3498db;
+    color: white;
+    cursor: grab;
+}
+
+.dropzone {
+    background-color: #f39c12;
+    color: white;
+}
+
+.hover-box {
+    width: 150px;
+    height: 150px;
+    background-color: #27ae60;
+    color: white;
+    line-height: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #333;
+}

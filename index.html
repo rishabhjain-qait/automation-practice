@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium Automation Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Selenium Automation Practice Website</h1>
+
+    <!-- Button Click Section -->
+    <section id="click-section">
+        <h2>Button Click</h2>
+        <button id="clickButton">Click Me!</button>
+        <p id="clickResult">Button not clicked yet.</p>
+    </section>
+
+    <!-- Form Handling Section -->
+    <section id="form-section">
+        <h2>Form Handling</h2>
+        <form id="testForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" name="name" placeholder="Enter your name">
+            <br>
+
+            <label for="emailInput">Email:</label>
+            <input type="email" id="emailInput" name="email" placeholder="Enter your email">
+            <br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+
+            <label for="subscription">Subscription:</label>
+            <input type="checkbox" id="newsletter" name="subscription" value="newsletter">
+            <label for="newsletter">Newsletter</label>
+            <br>
+
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Mouse Actions Section (Drag and Drop, Hover) -->
+    <section id="mouse-actions-section">
+        <h2>Mouse Actions (Hover, Drag and Drop)</h2>
+        <div class="drag-container">
+            <div class="draggable" id="dragItem" draggable="true">Drag Me</div>
+            <div class="dropzone" id="dropZone">Drop Here</div>
+        </div>
+        <p id="dragResult"></p>
+
+        <div class="hover-container">
+            <p>Hover over the box below:</p>
+            <div class="hover-box" id="hoverBox">Hover Me!</div>
+            <p id="hoverResult"></p>
+        </div>
+    </section>
+
+    <!-- Alert and Popup Handling Section -->
+    <section id="alerts-section">
+        <h2>Alerts and Popups</h2>
+        <button id="alertButton">Trigger Alert</button>
+        <button id="confirmButton">Trigger Confirm</button>
+        <button id="promptButton">Trigger Prompt</button>
+        <p id="alertResult"></p>
+    </section>
+
+    <!-- File Upload and Download Section -->
+    <section id="file-upload-section">
+        <h2>File Upload</h2>
+        <input type="file" id="fileInput">
+        <p id="fileResult"></p>
+    </section>
+
+    <!-- Frames Section -->
+    <section id="frames-section">
+        <h2>Frames Handling</h2>
+        <iframe src="https://www.example.com" id="exampleFrame" title="Example Frame"></iframe>
+    </section>
+
+    <!-- Window and Tabs Section -->
+    <section id="windows-section">
+        <h2>Window and Tabs Handling</h2>
+        <button id="newWindowButton">Open New Window</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
